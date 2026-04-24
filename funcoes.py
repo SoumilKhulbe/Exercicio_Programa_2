@@ -8,3 +8,15 @@ def rolar_dados(num_dados):
 
     return lista
 
+
+
+
+def guardar_dado(dados_rolados,dados_guardados,numero):
+    lista = []
+    if numero in dados_rolados:
+        dados_guardados.append(numero)
+        dados_rolados.remove(numero)
+    lista.append(dados_rolados)
+    lista.append(dados_guardados)
+
+    return lista

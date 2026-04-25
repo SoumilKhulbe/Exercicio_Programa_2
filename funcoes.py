@@ -39,7 +39,6 @@ def remover_dado(dados_rolados, dados_no_estoque, indice):
 
 
 
-
 def calcula_pontos_regra_simples(numeros):
     dic = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
 
@@ -52,3 +51,9 @@ def calcula_pontos_regra_simples(numeros):
 
 
 
+def calcula_pontos_soma(numeros):
+    contagem = 0
+    for x in numeros:
+        contagem += x
+
+    return contagem

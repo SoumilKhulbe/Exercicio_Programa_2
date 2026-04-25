@@ -35,3 +35,20 @@ def remover_dado(dados_rolados, dados_no_estoque, indice):
     return lista
 
 
+
+
+
+
+
+def calcula_pontos_regra_simples(numeros):
+    dic = {'1': 0, '2': 0, '3': 0, '4': 0, '5': 0, '6': 0}
+    
+    for x in numeros:
+        dic[x] += x
+
+    return dic
+        
+    
+
+
+

@@ -22,3 +22,16 @@ def guardar_dado(dados_rolados,dados_guardados,numero):
     return lista
 
 
+
+
+
+def remover_dado(dados_rolados, dados_no_estoque, indice):
+    lista = []
+    dados_rolados.append(dados_no_estoque[indice])
+    del dados_no_estoque[indice]
+    lista.append(dados_rolados)
+    lista.append(dados_no_estoque)
+
+    return lista
+
+

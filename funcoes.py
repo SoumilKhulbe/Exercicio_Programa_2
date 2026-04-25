@@ -57,3 +57,16 @@ def calcula_pontos_soma(numeros):
         contagem += x
 
     return contagem
+
+
+
+
+def calcula_pontos_sequencia_baixa(numeros):
+    for n in numeros:
+        if (n+1 in numeros and n+2 in numeros and n+3 in numeros):
+            return 15
+        
+    return 0
+
+
+

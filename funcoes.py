@@ -76,3 +76,25 @@ def calcula_pontos_sequencia_alta(numeros):
             return 30
         
     return 0
+
+
+
+
+def calcula_pontos_full_house(lista):
+    dic = {1 : 0, 2 : 0, 3 : 0, 4 : 0, 5 : 0, 6 : 0}
+    for x in lista:
+        dic[x] += 1
+    tres = False
+    dois = False
+
+    for y in dic:
+        if dic[y] == 3:
+            tres = True
+        elif dic[y] == 2:
+            dois = True
+    if tres and dois:
+        total = 0
+        for x in lista:
+            total += x
+        return total
+    return 0

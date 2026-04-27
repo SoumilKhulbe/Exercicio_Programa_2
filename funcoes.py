@@ -70,3 +70,9 @@ def calcula_pontos_sequencia_baixa(numeros):
 
 
 
+def calcula_pontos_sequencia_alta(numeros):
+    for n in numeros:
+        if (n+1 in numeros and n+2 in numeros and n+3 in numeros and n+4 in numeros):
+            return 30
+        
+    return 0

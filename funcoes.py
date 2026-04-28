@@ -109,7 +109,7 @@ def calcula_pontos_quadra(lista):
     quatro = False
     
     for y in dic:
-        if dic[y] == 4:
+        if dic[y] >= 4:
             quatro = True
 
     if quatro:

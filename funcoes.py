@@ -111,10 +111,12 @@ def calcula_pontos_quadra(lista):
     for y in dic:
         if dic[y] == 4:
             quatro = True
-            chave = y
 
     if quatro:
-        total = chave * 4
-        return total
-    
+        total = 0
+        for z in lista:
+            total += z
+
+        return total 
+       
     return 0

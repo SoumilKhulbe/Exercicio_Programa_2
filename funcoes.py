@@ -98,3 +98,21 @@ def calcula_pontos_full_house(lista):
             total += x
         return total
     return 0
+
+
+
+def calcula_pontos_quadra(lista):
+    dic = {1 : 0, 2 : 0, 3 : 0, 4 : 0, 5 : 0, 6 : 0}
+    for x in lista:
+        dic[x] += 1
+    
+    for y in dic:
+        if dic[y] == 4:
+            quatro = True
+            chave = y
+
+    if quatro:
+        total = chave * 4
+        return total
+    
+    return 0

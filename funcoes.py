@@ -120,3 +120,22 @@ def calcula_pontos_quadra(lista):
         return total 
        
     return 0
+
+
+
+
+def calcula_pontos_quina(lista):
+    dic = {1 : 0, 2 : 0, 3 : 0, 4 : 0, 5 : 0, 6 : 0}
+    for x in lista:
+        dic[x] += 1
+
+    cinco = False
+    
+    for y in dic:
+        if dic[y] >= 5:
+            cinco = True
+
+    if cinco:
+        return 50
+       
+    return 0

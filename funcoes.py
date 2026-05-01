@@ -143,11 +143,3 @@ def calcula_pontos_quina(lista):
 
 
 
-def faz_jogada(dados, categoria, cartela_de_pontos):
-    if categoria in cartela_de_pontos['regra_simples']:
-        pontos = calcula_pontos_regra_simples(dados, categoria)
-        cartela_de_pontos['regra_simples'][categoria] = ponto
-    elif categoria in cartela_de_pontos['regra_avancada']:
-        pontos = calcula_pontos_regra_avancada(dados, categoria)
-        cartela_de_pontos['regra_avancada'][categoria] = pontos 
-    return cartela_de_pontos

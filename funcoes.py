@@ -163,7 +163,7 @@ def faz_jogada(dados, categoria, cartela_de_pontos):
     if int(categoria) in simples:
         a = calcula_pontos_regra_simples(dados)
         pontos = a[int(categoria)]
-        cartela_de_pontos["regra_simples"][categoria] = pontos
+        cartela_de_pontos["regra_simples"][int(categoria)] = pontos
     elif (categoria) in avancada:
         b = calcula_pontos_regra_avancada(dados)
         pontos = b[categoria] 

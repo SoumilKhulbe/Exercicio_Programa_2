@@ -162,7 +162,7 @@ def faz_jogada(dados, categoria, cartela_de_pontos):
     avancada = ["cinco_iguais", "full_house", "quadra", "sem_combinacao", "sequencia_alta", "sequencia_baixa"]
     if int(categoria) in simples:
         a = calcula_pontos_regra_simples(dados)
-        pontos = a[categoria]
+        pontos = a[int(categoria)]
         cartela_de_pontos["regra_simples"][categoria] = pontos
     elif (categoria) in avancada:
         b = calcula_pontos_regra_avancada(dados)

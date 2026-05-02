@@ -95,9 +95,9 @@ for rodada in range(12):
             continue
 
 
+    print("Digite a combinação desejada:")
 
     while True:
-        print("Digite a combinação desejada:")
         opcao = input(">")
 
         if opcao in avancada:

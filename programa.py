@@ -4,7 +4,7 @@ simples = ["1", "2", "3", "4","5", "6"]
 avancada = ["cinco_iguais", "full_house", "quadra", "sem_combinacao", "sequencia_alta", "sequencia_baixa"]
 
 cartela = {
-    "regra_simples": {1 : -1, 2 : -1, 3 : -1, 4 : -1, 5 : -1, 6 : -1}, "regra_avancada": {"cinco_iguais": -1, "full_house": -1, "quadra": -1, "sem_combinacao": -1, "sequencia_alta": -1, "sequencia_baixa": -1}}
+    "regra_simples": {1 : -1, 2 : -1, 3 : -1, 4 : -1, 5 : -1, 6 : -1}, "regra_avancada": {"sem_combinacao": -1, "quadra": -1, "full_house": -1, "sequencia_baixa": -1, "sequencia_alta": -1, "cinco_iguais": -1}}
 
 imprime_cartela(cartela)
 

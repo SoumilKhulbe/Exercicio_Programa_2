@@ -6,9 +6,8 @@ avancada = ["cinco_iguais", "full_house", "quadra", "sem_combinacao", "sequencia
 cartela = {
     "regra_simples": {1 : -1, 2 : -1, 3 : -1, 4 : -1, 5 : -1, 6 : -1}, "regra_avancada": {"cinco_iguais": -1, "full_house": -1, "quadra": -1, "sem_combinacao": -1, "sequencia_alta": -1, "sequencia_baixa": -1}}
 
-c = imprime_cartela(cartela)
+imprime_cartela(cartela)
 
-print(c)
 
 for rodada in range(12):
     rolados = rolar_dados(5)
@@ -77,7 +76,7 @@ for rodada in range(12):
                 a = input(">")
 
         elif a == "4":
-            print(imprime_cartela(cartela))
+            imprime_cartela(cartela)
             print(f"Dados rolados: {rolados}")
             print(f"Dados guardados: {guardados}")
 
@@ -100,7 +99,7 @@ for rodada in range(12):
                 dados = rolados + guardados
                 cartela = faz_jogada(dados, c, cartela)
                 break
-        elif opcao in simples:
+        elif int(opcao) in simples:
             if cartela["regra_simples"][int(opcao)] != -1:
                 print("Essa combinação já foi utilizada.")
                 continue
@@ -129,6 +128,6 @@ if somas >= 63:
     soma_total += 35
 
 
-print(imprime_cartela(cartela))
+imprime_cartela(cartela)
 
 print(f"Pontuação total: {soma_total}")

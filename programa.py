@@ -18,9 +18,9 @@ for rodada in range(12):
     print(f"Dados guardados: {guardados}")
 
     a = ""
+    print("Digite 1 para guardar um dado, 2 para remover um dado, 3 para rerrolar, 4 para ver a cartela ou 0 para marcar a pontuação:")
 
     while a != "0":
-        print("Digite 1 para guardar um dado, 2 para remover um dado, 3 para rerrolar, 4 para ver a cartela ou 0 para marcar a pontuação:")
 
         a = input(">")
 
@@ -33,6 +33,8 @@ for rodada in range(12):
 
             print(f"Dados rolados: {rolados}")
             print(f"Dados guardados: {guardados}")
+            print("Digite 1 para guardar um dado, 2 para remover um dado, 3 para rerrolar, 4 para ver a cartela ou 0 para marcar a pontuação:")
+
 
             
             continue
@@ -50,7 +52,8 @@ for rodada in range(12):
 
             print(f"Dados rolados: {rolados}")
             print(f"Dados guardados: {guardados}")
-        
+            print("Digite 1 para guardar um dado, 2 para remover um dado, 3 para rerrolar, 4 para ver a cartela ou 0 para marcar a pontuação:")
+
 
 
             continue
@@ -60,6 +63,7 @@ for rodada in range(12):
                 print("Você já usou todas as rerrolagens.")
                 print(f"Dados rolados: {rolados}")
                 print(f"Dados guardados: {guardados}")
+                print("Digite 1 para guardar um dado, 2 para remover um dado, 3 para rerrolar, 4 para ver a cartela ou 0 para marcar a pontuação:")
 
 
 
@@ -69,6 +73,7 @@ for rodada in range(12):
                 rerrolar += 1
                 print(f"Dados rolados: {rolados}")
                 print(f"Dados guardados: {guardados}")
+                print("Digite 1 para guardar um dado, 2 para remover um dado, 3 para rerrolar, 4 para ver a cartela ou 0 para marcar a pontuação:")
 
 
 
@@ -78,10 +83,15 @@ for rodada in range(12):
             imprime_cartela(cartela)
             print(f"Dados rolados: {rolados}")
             print(f"Dados guardados: {guardados}")
-
-
-
             continue
+        
+        elif a == "0":
+            break
+        
+        else:
+            print("Opção inválida. Tente novamente.")
+            continue
+
 
 
     while True:

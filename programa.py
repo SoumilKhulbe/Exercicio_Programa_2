@@ -16,11 +16,13 @@ for rodada in range(12):
 
     print(f"Dados rolados: {rolados}")
     print(f"Dados guardados: {guardados}")
-    print("Digite 1 para guardar um dado, 2 para remover um dado, 3 para rerrolar, 4 para ver a cartela ou 0 para marcar a pontuação: ")
 
-    a = input(">")
+    a = ""
 
     while a != "0":
+        print("Digite 1 para guardar um dado, 2 para remover um dado, 3 para rerrolar, 4 para ver a cartela ou 0 para marcar a pontuação: ")
+
+        a = input(">")
 
         if a == "1":
             print("Digite o índice do dado a ser guardado (0 a 4):")
@@ -32,9 +34,9 @@ for rodada in range(12):
             print(f"Dados rolados: {rolados}")
             print(f"Dados guardados: {guardados}")
 
-            print("Digite 1 para guardar um dado, 2 para remover um dado, 3 para rerrolar, 4 para ver a cartela ou 0 para marcar a pontuação: ")
-
-            a = input(">")
+            
+            continue
+        
 
 
         
@@ -49,10 +51,9 @@ for rodada in range(12):
             print(f"Dados rolados: {rolados}")
             print(f"Dados guardados: {guardados}")
         
-            print("Digite 1 para guardar um dado, 2 para remover um dado, 3 para rerrolar, 4 para ver a cartela ou 0 para marcar a pontuação: ")
 
 
-            a = input(">")
+            continue
 
         elif a == "3":
             if rerrolar == 2:
@@ -60,30 +61,27 @@ for rodada in range(12):
                 print(f"Dados rolados: {rolados}")
                 print(f"Dados guardados: {guardados}")
 
-                print("Digite 1 para guardar um dado, 2 para remover um dado, 3 para rerrolar, 4 para ver a cartela ou 0 para marcar a pontuação: ")
 
 
-                a = input(">")
+                continue
             else: 
                 rolados = rolar_dados(len(rolados))
                 rerrolar += 1
                 print(f"Dados rolados: {rolados}")
                 print(f"Dados guardados: {guardados}")
 
-                print("Digite 1 para guardar um dado, 2 para remover um dado, 3 para rerrolar, 4 para ver a cartela ou 0 para marcar a pontuação: ")
 
 
-                a = input(">")
+                continue
 
         elif a == "4":
             imprime_cartela(cartela)
             print(f"Dados rolados: {rolados}")
             print(f"Dados guardados: {guardados}")
 
-            print("Digite 1 para guardar um dado, 2 para remover um dado, 3 para rerrolar, 4 para ver a cartela ou 0 para marcar a pontuação: ")
 
 
-            a = input(">")
+            continue
 
 
     while True:

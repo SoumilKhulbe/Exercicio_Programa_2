@@ -1,6 +1,6 @@
 from funcoes import *
 
-simples = [1, 2, 3, 4, 5, 6]
+simples = ["1", "2", "3", "4","5", "6"]
 avancada = ["cinco_iguais", "full_house", "quadra", "sem_combinacao", "sequencia_alta", "sequencia_baixa"]
 
 cartela = {
@@ -99,7 +99,7 @@ for rodada in range(12):
                 dados = rolados + guardados
                 cartela = faz_jogada(dados, c, cartela)
                 break
-        elif int(opcao) in simples:
+        elif opcao in simples:
             if cartela["regra_simples"][int(opcao)] != -1:
                 print("Essa combinação já foi utilizada.")
                 continue
